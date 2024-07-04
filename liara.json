@@ -2,5 +2,13 @@
   "platform": "next",
   "app": "issue-tracker",
   "port": 3000,
-  "version": "14.2.4"
+  "deploy": {
+    "buildCommand": "npm run build",
+    "startCommand": "npm start",
+    "installCommand": "npm install",
+    "postInstallCommand": "npx prisma generate --schema=../prisma/schema.prisma"
+  },
+  "env": {
+    "DATABASE_URL": "mysql://root:QQRwU8RRpGLRvHfOsqcZuDGa@grand-teton.liara.cloud:30658/nifty_moore"
+  }
 }
