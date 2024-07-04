@@ -1,0 +1,6 @@
+{
+  "platform": "next",
+  "app": "issue-tracker",
+  "port": 3000,
+  "version": "14.2.4"
+}
